@@ -37,6 +37,11 @@ html {
 @media screen and (max-width:468px) {
     .jumbotron {
         height: 90vh;
+        background: url(./image/nav.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+     
     }
     .jumbotron h1 {
         font-size: 48px;
