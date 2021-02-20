@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+/* Main Image */
+
 .jumbotron {
     background: url(./image/nav.jpg);
     background-position: center;
@@ -14,10 +16,10 @@
 }
 
 .jumbotron h1 {
-    font-weight: 700;
+    font-weight: bolder;
     margin-top: 80px;
     font-size: 58px;
-    letter-spacing: 7.5%;
+    letter-spacing: 7.5px;
     -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: black;
 }
@@ -26,12 +28,25 @@
     color : rgba(255, 255, 255, 0.8);
 }
 
-.card {
+@media screen and (max-width:468px) {
+    .jumbotron h1 {
+        font-size: 48px;
+        letter-spacing: 5%;
+    }
+}
+
+
+/* Card in Navbar */
+
+.forms {
     width: 60vw;
     margin-top: -100px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-.card .btn-check {
+}
+
+    
+.forms .btn-check {
     background-color: #F45D5D;
     color: white;
     font-weight: bold;
@@ -51,4 +66,36 @@
     text-align: center;
     pointer-events: none;
     color: #aaa;
+}
+
+
+@media screen and (max-width:468px) {
+    .forms {
+        text-align: center;
+        margin-top: -150px;
+        width: 80%;
+    }
+    .forms form  {
+        width: 100%;
+    }
+    .forms .btn-check {
+        width: 100%;
+    }
+}
+
+/* Main Section */
+.main {
+    margin-top: 79px;
+}
+
+
+.main .main-heading {
+    font-weight: bolder;
+    margin-top: 100px;
+    letter-spacing: 3px;
+    font-size: 48px;
+}
+
+.main .content-main {
+    margin-top: 129px;
 }
