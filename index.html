@@ -4,10 +4,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" /> 
+
+    <!-- FA4 -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="./assets/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/dist/assets/owl.carousel.min.css">
+       
+
+    <!-- Main Style -->
     <link rel="stylesheet" href="./assets/style.css">
 
     <title>Hello, world!</title>
@@ -21,8 +37,8 @@
     
      <!-- Card Navbar -->
     <div class="forms card mx-auto">
-  <div class="card-body">
-    <h5 class="card-title mb-3">Check Availability</h5>
+    <div class="card-body">
+    <h5 class="card-title mb-3 font-weight-bold">Check Availability</h5>
     <form class="form-inline justify-content-start">
       <div class="form-group mr-4">
         <span class="fas fa-user form-control-icon"></span>
@@ -44,7 +60,7 @@
     <div class="content-main">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm mb-5">
             <div class="card" >
               <div class="card-body">
                 <span class="iconify" data-inline="false" data-icon="emojione:alarm-clock" style="font-size: 89px;"></span>
@@ -53,7 +69,7 @@
               <p class="font-weight-bolder mt-3">Menghemat Waktu</p>
               <span>Rencanakan liburan anda dengan waktu yang singkat tanpa ribet</span>
           </div>
-          <div class="col-sm">
+          <div class="col-sm mb-5">
             <div class="card" >
               <div class="card-body">
                 <span class="iconify" data-inline="false" data-icon="emojione:credit-card" style="font-size: 89px;"></span>
@@ -77,6 +93,49 @@
   </div>
 </div>
 
+<!-- Gallery -->
+
+<section id="gallery">
+  <div class="container text-center">
+    <h1 class="main-heading">Gallery</h1>
+    <div class="owl-carousel w-100">
+      <img src="./assets/image/stockholm.jpg" alt="" height="300">
+      <img src="./assets/image/BALI.jpg" alt="" height="300">
+      <img src="./assets/image/tugu-jogja.jpeg" alt="" height="300">
+      <img src="./assets/image/palembang.jpg" alt="" height="300">
+    </div> 
+</div>
+</section>
+
+<!-- Kenapa Kami -->
+
+<section id="why-us">
+  <div class="container text-center">
+    <article class="review">
+      <div class="img-container">
+        <img src="person-1.jpeg" id="person-img" alt="" />
+      </div>
+      <h4 id="author">sara jones</h4>
+      <p id="job">ux designer</p>
+      <p id="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+        asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+        Iste, doloremque nihil?
+      </p>
+      <!-- prev next buttons-->
+      <div class="button-container">
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <!-- random button -->
+      <button class="random-btn">surprise me</button>
+    </article>  
+  </div>
+</section>
 
     
     
@@ -84,5 +143,7 @@
     <script async src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="./assets/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/app.js"></script>
   </body>
 </html>
