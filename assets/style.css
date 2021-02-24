@@ -54,6 +54,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 /* Main Image */
 
 .jumbotron {
@@ -143,10 +145,6 @@ html {
 }
 
 /* Main Section */
-.main {
-    margin-top: 79px;
-}
-
 
 .main .main-heading {
     font-weight: bolder;
@@ -159,10 +157,9 @@ html {
     margin-top: 129px;
 }
 
-@media screen and (max-width: 468px) {
-}   
+
 #gallery {
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 120px;
     background-color: rgba(196, 196, 196, 0.6);
 }
@@ -170,22 +167,29 @@ html {
     font-weight: bolder;
     letter-spacing: 3px;
     font-size: 48px;
-    margin-bottom: 100px;
-    
+    margin-bottom: 100px;    
+}
+@media screen and (max-width: 468px) {
+  #gallery img {
+    height: 300px;
+    width: 400px;  
+  }
+
+}   
+
+
+
+#katakami {
+  padding: 120px;
 }
 
-
-#why-us {
-    padding: 120px;
-}
-
-#why-us h1 {
-    font-weight: bolder;
+#katakami .main-heading {
+  font-weight: bolder;
+    margin-top: 100px;
     letter-spacing: 3px;
     font-size: 48px;
-    margin-bottom: 100px;   
+    margin-bottom: 50px;
 }
-
 
 review {
     padding: 1.5rem 2rem;
@@ -276,6 +280,15 @@ review {
     background: var(--clr-primary-5);
     color: var(--clr-primary-1);
   }
+
+  @media screen and (max-width:468px) {
+    #review {
+      width:100%;
+    }
+    #katakami .main-heading {
+      font-size: 30px;
+    }
+  }
   
   
 
@@ -284,12 +297,28 @@ review {
 .dark {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
+    transition: 2s all ;
+}
+
+.dark nav .nav-link {
+  background-color:black i !important;
 }
 
 .dark .forms {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.dark .forms .btn {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.5s all;
+}
+
+.dark .forms .btn:hover {
+  background-color: #F45D5D;
+  border:none;
+}
+
 
 .dark #gallery {
     color: white;

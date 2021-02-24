@@ -2,13 +2,36 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
       loop: true,
       margin: 15,
-      responsiveClass: true,
-      center: true,
-      height: 300,
+      items:1,
       responsive: {
-        600: {
-          items: 4
-        }
+          0: {
+              items: 1,
+              nav: true,
+              mouseDrag: true,
+              autoplay: true,
+              dots: true,
+          },
+  
+          576: {
+              items: 3,
+              nav:true,
+              dots: true,
+              mouseDrag: true,
+              autoplay: true,
+          },
+          
+          767: {
+              items: 3,
+              nav: true,
+              mouseDrag: true,
+              autoplay: true,
+          },
+          992: {
+              items: 4,
+              nav: true,
+              loop: false,
+              margin: 20,
+          },
       }
     });
   });
@@ -23,39 +46,31 @@ $(document).ready(function(){
 const reviews = [
   {
     id: 1,
-    name: "susan smith",
-    job: "web developer",
+    name: "Susan Smith",
+    job: "UI Designer",
     img:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
     text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+      "i hope this company, can better because i recommend you who see my testimony right now ",
   },
+
   {
     id: 2,
-    name: "anna johnson",
-    job: "web designer",
-    img:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text:
-      "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
-  },
-  {
-    id: 3,
-    name: "peter jones",
-    job: "intern",
+    name: "Dio Rovelino",
+    job: "Front End Dev",
     img:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
     text:
-      "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+      "Gila keren banget asli, Gua jadi tau harga-harga yang promo",
   },
   {
     id: 4,
-    name: "bill anderson",
-    job: "the boss",
+    name: "Diyas Frans Adhira",
+    job: "Graphic Designer",
     img:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
     text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+      "Pertama buka si gak yakin ini web bisa unggul daripada yang lain, tapi ternyata pecah banget",
   },
 ];
 // select items
